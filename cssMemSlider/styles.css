@@ -144,23 +144,23 @@ input {
     display: none;
 }
 
-input:nth-child(1) {
+.label1 {
     grid-area: radio1;
 }
 
-input:nth-child(2) {
+.label2 {
     grid-area: radio2;
 }
 
-input:nth-child(3) {
+.label3 {
     grid-area: radio3;
 }
 
-input:nth-child(4) {
+.label4 {
     grid-area: radio4;
 }
 
-input:nth-child(5) {
+.label5 {
     grid-area: radio5;
 }
 
@@ -306,7 +306,7 @@ input:checked +  label .check{
             "slider slider slider slider slider slider slider slider slider slider slider"
             ". . . radio1 radio2 radio3 radio4 radio5 . . ."
             "textMems textMems textMems textMems textMems textMems textMems textMems textMems textMems textMems";
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr 2fr 2fr 2fr;
     }
     /* slider section end */
 
