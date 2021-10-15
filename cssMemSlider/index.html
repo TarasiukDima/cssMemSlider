@@ -5,54 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemSlider</title>
+
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section class="slider__section">
+    <header class="header">
         <div class="wrapper">
             <h1 class="main__title">Slider with mem's</h1>
+        </div>
+    </header>
 
-            <div class="slider__container">
-                <div class="slider__item">
-                    <img src="img/1.jpg" alt="first mem">
-                </div>
 
-                <div class="slider__item">
-                    <img src="img/2.jpg" alt="second mem">
-                </div>
-
-                <div class="slider__item">
-                    <img src="img/3.jpg" alt="third mem">
-                </div>
-
-                <div class="slider__item">
-                    <img src="img/4.jpg" alt="fourth mem">
-                </div>
-
-                <div class="slider__item">
-                    <img src="img/5.jpg" alt="five mem">
-                </div>
+    <section class="slider__section">
+        <div class="wrapper">
+            <div class="mems__container">
+                <p class="one__mem active__slide">This first text</p>
+                <p class="one__mem">This second text</p>
+                <p class="one__mem">This third text</p>
+                <p class="one__mem">This fourth text</p>
+                <p class="one__mem">This five text</p>
             </div>
 
-            <div class="slider__controls">
-                <div class="mems__container">
-                    <p class="one__mem">This first text</p>
-                    <p class="one__mem">This second text</p>
-                    <p class="one__mem">This third text</p>
-                    <p class="one__mem">This fourth text</p>
-                    <p class="one__mem">This five text</p>
-                </div>
+            <ul class="controls__bullets">
+                <li>
+                    <label>
+                        <input type="radio" data-value="1" name="bullet" checked>
+                        <span class="check"></span>
+                    </label>
+                </li>
 
-                <ul class="controls__bullets">
-                    <li><input type="radio" name="bullet"></li>
-                    <li><input type="radio" name="bullet"></li>
-                    <li><input type="radio" name="bullet"></li>
-                    <li><input type="radio" name="bullet"></li>
-                    <li><input type="radio" name="bullet"></li>
-                </ul>
-                buttons
+                <li>
+                    <label>
+                        <input type="radio" data-value="2" name="bullet">
+                        <span class="check"></span>
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="radio" data-value="3" name="bullet">
+                        <span class="check"></span>
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="radio" data-value="4" name="bullet">
+                        <span class="check"></span>
+                    </label>
+                </li>
+
+                <li>
+                    <label>
+                        <input type="radio" data-value="5" name="bullet">
+                        <span class="check"></span>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="slider__container">
+                <img class="slider__item active__slide" src="img/1.jpg" alt="first mem">
+                <img class="slider__item" src="img/2.jpg" alt="second mem">
+                <img class="slider__item" src="img/3.jpg" alt="third mem">
+                <img class="slider__item" src="img/4.jpg" alt="fourth mem">
+                <img class="slider__item" src="img/5.jpg" alt="five mem">
             </div>
         </div>
     </section>
+
+
+    <footer class="footer">
+        <div class="wrapper">
+            <a href="">Dzmitry Tarasiuk</a>
+        </div>
+    </footer>
 
 </body>
 </html>

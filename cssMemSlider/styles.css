@@ -1,0 +1,194 @@
+:root {
+    --active_slide: 1;
+    --head__foot_col: #fff;
+    --head__foot_bg: #00f;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@keyframes textVisible {
+    0% {
+        transform: translateX(200px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes imgVisible {
+    0% {
+        transform: translate(-100px, -500px) rotate(-20deg);
+    }
+
+    50% {
+               transform: translate(-100px, 0) rotate(-20deg);
+    }
+
+    100% {
+        transform: translate(0, 0)  rotate(0);
+    }
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #fdfdfd;
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+section {
+    flex-grow: 1;
+}
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    padding: 30px 0;
+    color: var(--head__foot_col);
+    background-color: var(--head__foot_bg);
+}
+
+
+.main__title {
+    margin: 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+.slider__section {
+    padding: 20px 0;
+}
+
+.slider__section .wrapper {
+    display: grid;
+    grid-template-areas:
+        "slider slider"
+        "textMems controls";
+    gap: 20px;
+}
+
+
+.slider__container {
+    grid-area: slider;
+    width: 100%;
+    height: 550px;
+    border: 5px solid #eeeeee;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slider__item {
+    display: none;
+    animation: imgVisible 1s linear;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.mems__container {
+    grid-area: textMems;
+    align-self: center;
+}
+
+.one__mem {
+    display: none;
+    margin: 0;
+    font-size: 28px;
+    animation: textVisible 0.5s ease-out;
+}
+
+.controls__bullets {
+    grid-area: controls;
+    align-self: center;
+    justify-self: flex-end;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+}
+
+input {
+    display: none;
+}
+
+input:checked ~ .check{
+    background-color: red;
+}
+
+input:checked {
+    --active_slide: attr(data-value);
+}
+
+label {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+label:hover .check{
+    background-color: rgb(12, 71, 160);
+}
+
+.check {
+    display: block;
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    border: 2px solid #290075;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: background-color 0.3s;
+}
+
+
+
+.footer {
+    padding: 20px 0;
+    text-align: center;
+    color: var(--head__foot_col);
+    background-color: var(--head__foot_bg);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+.active__slide {
+    display: block;
+}
