@@ -6,62 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssMemSlider</title>
 
+    <!-- links start -->
     <link rel="stylesheet" href="styles.css">
+    <!-- links end -->
 </head>
 <body>
+    <!-- header start -->
     <header class="header">
         <div class="wrapper">
             <h1 class="main__title">Slider with mem's</h1>
         </div>
     </header>
+    <!-- header start -->
 
-
+    <!-- slider start -->
     <section class="slider__section">
         <div class="wrapper">
+            <input class="radio1" id="radio1" type="radio"name="bullet" checked>
+            <label class="label" for="radio1">
+                <span class="check"></span>
+            </label>
+
+            <input class="radio2" id="radio2" type="radio"name="bullet">
+            <label class="label" for="radio2">
+                <span class="check"></span>
+            </label>
+
+            <input class="radio3" id="radio3" type="radio"name="bullet">
+            <label class="label" for="radio3">
+                <span class="check"></span>
+            </label>
+
+            <input class="radio4" id="radio4" type="radio"name="bullet">
+            <label class="label" for="radio4">
+                <span class="check"></span>
+            </label>
+
+            <input class="radio5" id="radio5" type="radio"name="bullet">
+            <label class="label" for="radio5">
+                <span class="check"></span>
+            </label>
+
+
             <div class="mems__container">
-                <p class="one__mem active__slide">This first text</p>
-                <p class="one__mem">This second text</p>
-                <p class="one__mem">This third text</p>
-                <p class="one__mem">This fourth text</p>
-                <p class="one__mem">This five text</p>
+                <p class="one__mem">Classic</p>
+                <p class="one__mem">Parallel universe</p>
+                <p class="one__mem">Mem slider</p>
+                <p class="one__mem">The truth of life</p>
+                <p class="one__mem">Find 10 differences</p>
             </div>
-
-            <ul class="controls__bullets">
-                <li>
-                    <label>
-                        <input type="radio" data-value="1" name="bullet" checked>
-                        <span class="check"></span>
-                    </label>
-                </li>
-
-                <li>
-                    <label>
-                        <input type="radio" data-value="2" name="bullet">
-                        <span class="check"></span>
-                    </label>
-                </li>
-
-                <li>
-                    <label>
-                        <input type="radio" data-value="3" name="bullet">
-                        <span class="check"></span>
-                    </label>
-                </li>
-
-                <li>
-                    <label>
-                        <input type="radio" data-value="4" name="bullet">
-                        <span class="check"></span>
-                    </label>
-                </li>
-
-                <li>
-                    <label>
-                        <input type="radio" data-value="5" name="bullet">
-                        <span class="check"></span>
-                    </label>
-                </li>
-            </ul>
 
             <div class="slider__container">
                 <img class="slider__item active__slide" src="img/1.jpg" alt="first mem">
@@ -72,13 +65,16 @@
             </div>
         </div>
     </section>
+    <!-- slider end -->
 
 
+    <!-- footer start -->
     <footer class="footer">
         <div class="wrapper">
-            <a href="">Dzmitry Tarasiuk</a>
+            <a href="https://github.com/TarasiukDima" target="_blank">Dzmitry Tarasiuk</a>
         </div>
     </footer>
+    <!-- footer end -->
 
 </body>
 </html>
