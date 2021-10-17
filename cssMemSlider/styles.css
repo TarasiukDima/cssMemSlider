@@ -1,5 +1,6 @@
 /* common styles start */
 :root {
+    --height__slider: 30rem;
     --head__foot_col: #fff;
     --head__foot_bg: #00356a;
 }
@@ -10,7 +11,7 @@
 
 @keyframes textVisible {
     0% {
-        transform: translateX(200px);
+        transform: translateX(15rem);
         opacity: 0;
     }
 
@@ -22,11 +23,11 @@
 
 @keyframes imgVisible {
     0% {
-        transform: translate(-100px, -500px) rotate(-20deg);
+        transform: translate(-8rem, -30rem) rotate(-20deg);
     }
 
     50% {
-               transform: translate(-100px, 0) rotate(-20deg);
+               transform: translate(-8rem, 0) rotate(-20deg);
     }
 
     100% {
@@ -77,7 +78,7 @@ section {
 
 /* header start */
 .header {
-    padding: 30px 0;
+    padding: 1rem 0;
     color: var(--head__foot_col);
     background-color: var(--head__foot_bg);
 }
@@ -87,7 +88,7 @@ section {
 
 /* slider section start */
 .slider__section {
-    padding: 20px 0;
+    padding: 1rem 0;
 }
 
 .slider__section .wrapper {
@@ -96,7 +97,7 @@ section {
         "slider slider slider slider slider slider"
         "textMems radio1 radio2 radio3 radio4 radio5";
     grid-template-columns: 10fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px 0;
+    gap: 1.1rem 0;
 }
 /* slider section end */
 
@@ -105,10 +106,10 @@ section {
 .slider__container {
     grid-area: slider;
     width: 100%;
-    height: 550px;
-    border: 5px solid #0c96a8;
-    border-radius: 10px;
-    background-color: #fff;
+    height: var(--height__slider);
+    border: 0.3rem solid #0c96a8;
+    border-radius: 0.5rem;
+    background-color: #000;
     overflow: hidden;
 }
 
@@ -120,7 +121,7 @@ section {
 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 /* slider container end */
 
@@ -215,10 +216,8 @@ input:checked +  label .check{
 
 .label {
     display: flex;
-    width: 8vw;
-    height: 8vw;
-    max-width: 100px;
-    max-height: 100px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
@@ -233,7 +232,7 @@ input:checked +  label .check{
     width: 50%;
     height: 50%;
     margin: auto;
-    border: 2px solid #290075;
+    border: 0.2rem solid #290075;
     border-radius: 50%;
     background-color: transparent;
     transition: background-color 0.3s;
@@ -243,7 +242,7 @@ input:checked +  label .check{
 
 /* footer start */
 .footer {
-    padding: 20px 0;
+    padding: 1rem 0;
     text-align: center;
     color: var(--head__foot_col);
     background-color: var(--head__foot_bg);
@@ -263,18 +262,16 @@ input:checked +  label .check{
     /* common styles end */
 
 
-    /* header start */
-    .header {
-        padding: 20px 0;
-    }
-    /* header end */
-
-
     /* slider container start */
     .slider__container {
-        height: 400px;
+        height: 25rem;
     }
     /* slider container end */
+
+    .label {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
 
 
     /* mems text start */
@@ -282,12 +279,6 @@ input:checked +  label .check{
         font-size: 1.3rem;
     }
     /* mems text end */
-
-    /* footer start */
-    .footer {
-        padding: 15px 0;
-    }
-    /* footer end */
 }
 
 @media screen and (max-width: 767px) {
@@ -304,10 +295,10 @@ input:checked +  label .check{
     /* slider section start */
     .slider__section .wrapper {
         grid-template-areas:
-            "slider slider slider slider slider slider slider slider slider slider slider"
-            ". . . radio1 radio2 radio3 radio4 radio5 . . ."
-            "textMems textMems textMems textMems textMems textMems textMems textMems textMems textMems textMems";
-        grid-template-columns: 2fr 2fr 2fr 1fr 1fr 1fr 1fr 1fr 2fr 2fr 2fr;
+            "slider slider slider slider slider slider slider"
+            ". radio1 radio2 radio3 radio4 radio5 ."
+            "textMems textMems textMems textMems textMems textMems textMems";
+        grid-template-columns: 5fr 1fr 1fr 1fr 1fr 1fr 5fr;
     }
     /* slider section end */
 
@@ -317,7 +308,7 @@ input:checked +  label .check{
 
     /* slider container start */
     .slider__container {
-        height: 300px;
+        height: 20rem;
     }
     /* slider container end */
 
@@ -339,14 +330,6 @@ input:checked +  label .check{
         font-size: 1.5rem;
     }
     /* common styles end */
-
-
-    /* slider container start */
-    .slider__container {
-        height:300px;
-        border-width: 3px;
-    }
-    /* slider container end */
 
 
     /* mems text start */
@@ -371,7 +354,7 @@ input:checked +  label .check{
 
 @media screen and (max-width: 450px) {
     .slider__container {
-        height: 250px;
+        height: 15rem;
     }
 }
 /* media end */

@@ -1,6 +1,6 @@
 /* common styles start */
 :root {
-    --height__slider: 550px;
+    --height__slider: 30rem;
     --head__foot_col: #fff;
     --head__foot_bg: #00356a;
 }
@@ -13,7 +13,7 @@
 
 @keyframes textVisible {
     0% {
-        transform: translateX(200px);
+        transform: translateX(15rem);
         opacity: 0;
     }
 
@@ -76,7 +76,7 @@ section {
 
 /* header start */
 .header {
-    padding: 30px 0;
+    padding: 1rem 0;
     color: var(--head__foot_col);
     background-color: var(--head__foot_bg);
 }
@@ -85,7 +85,7 @@ section {
 
 /* slider section start */
 .slider__section {
-    padding: 20px 0;
+    padding: 1rem 0;
 }
 
 .slider__section .wrapper {
@@ -94,7 +94,7 @@ section {
         "slider slider slider slider slider slider"
         "textMems radio1 radio2 radio3 radio4 radio5";
     grid-template-columns: 10fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 20px 0;
+    gap: 1rem 0;
 }
 /* slider section end */
 
@@ -103,9 +103,9 @@ section {
     grid-area: slider;
     width: 100%;
     height: var(--height__slider);
-    border: 5px solid #0c96a8;
-    border-radius: 10px;
-    background-color: #fff;
+    border: 0.3rem solid #0c96a8;
+    border-radius: 0.5rem;
+    background-color: #000;
     overflow: hidden;
 }
 
@@ -125,7 +125,7 @@ section {
 img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
 }
 /* slider container end */
 
@@ -189,7 +189,7 @@ input:checked + label .check {
 }
 
 .radio2:checked ~ .slider__container .slider__contant__wrap {
-    transform: translateY(-550px);
+    transform: translateY(-30rem);
 }
 
 .radio2:checked ~ .slider__container .slider__contant__wrap .slider__item:nth-child(2) {
@@ -201,7 +201,7 @@ input:checked + label .check {
 }
 
 .radio3:checked ~ .slider__container .slider__contant__wrap {
-    transform: translateY(-1100px);
+    transform: translateY(-60rem);
 }
 
 .radio3:checked ~ .slider__container .slider__contant__wrap .slider__item:nth-child(3) {
@@ -213,7 +213,7 @@ input:checked + label .check {
 }
 
 .radio4:checked ~ .slider__container .slider__contant__wrap {
-    transform: translateY(-1650px);
+    transform: translateY(-90rem);
 }
 
 .radio4:checked ~ .slider__container .slider__contant__wrap .slider__item:nth-child(4) {
@@ -225,7 +225,7 @@ input:checked + label .check {
 }
 
 .radio5:checked ~ .slider__container .slider__contant__wrap {
-    transform: translateY(-2200px);
+    transform: translateY(-120rem);
 }
 
 .radio5:checked ~ .slider__container .slider__contant__wrap .slider__item:nth-child(5) {
@@ -238,10 +238,8 @@ input:checked + label .check {
 
 .label {
     display: flex;
-    width: 8vw;
-    height: 8vw;
-    max-width: 100px;
-    max-height: 100px;
+    width: 6rem;
+    height: 6rem;
     border-radius: 50%;
     background-color: transparent;
     cursor: pointer;
@@ -256,7 +254,7 @@ input:checked + label .check {
     width: 50%;
     height: 50%;
     margin: auto;
-    border: 2px solid #290075;
+    border: 0.2rem solid #290075;
     border-radius: 50%;
     background-color: transparent;
     transition: background-color 0.3s;
@@ -265,7 +263,7 @@ input:checked + label .check {
 
 /* footer start */
 .footer {
-    padding: 20px 0;
+    padding: 1rem 0;
     text-align: center;
     color: var(--head__foot_col);
     background-color: var(--head__foot_bg);
@@ -276,7 +274,7 @@ input:checked + label .check {
 @media screen and (max-width: 900px) {
     /* common styles start */
     :root {
-        --height__slider: 400px;
+        --height__slider: 25rem;
     }
 
     .wrapper {
@@ -288,12 +286,6 @@ input:checked + label .check {
     }
     /* common styles end */
 
-    /* header start */
-    .header {
-        padding: 20px 0;
-    }
-    /* header end */
-
     /* mems text start */
     .one__mem {
         font-size: 1.3rem;
@@ -302,26 +294,31 @@ input:checked + label .check {
 
     /* input controls start */
     .radio2:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-400px);
+        transform: translateY(-25rem);
     }
 
     .radio3:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-800px);
+        transform: translateY(-50rem);
     }
 
     .radio4:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-1200px);
+        transform: translateY(-75rem);
     }
 
     .radio5:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-1600px);
+        transform: translateY(-100rem);
+    }
+
+    .label {
+        width: 4.5rem;
+        height: 4.5rem;
     }
     /* input controls end */
 
     /* footer
      start */
     .footer {
-        padding: 15px 0;
+        padding: 0.8rem 0;
     }
     /* footer end */
 }
@@ -329,7 +326,7 @@ input:checked + label .check {
 @media screen and (max-width: 767px) {
     /* common styles start */
     :root {
-        --height__slider: 300px;
+        --height__slider: 20rem;
     }
 
     .wrapper {
@@ -359,19 +356,19 @@ input:checked + label .check {
 
     /* input controls start */
     .radio2:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-300px);
+        transform: translateY(-20rem);
     }
 
     .radio3:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-600px);
+        transform: translateY(-40rem);
     }
 
     .radio4:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-900px);
+        transform: translateY(-60rem);
     }
 
     .radio5:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-1200px);
+        transform: translateY(-80rem);
     }
 
     .label {
@@ -391,12 +388,6 @@ input:checked + label .check {
         font-size: 1.5rem;
     }
     /* common styles end */
-
-    /* slider container start */
-    .slider__container {
-        border-width: 3px;
-    }
-    /* slider container end */
 
     /* mems text start */
     .one__mem {
@@ -419,23 +410,23 @@ input:checked + label .check {
 
 @media screen and (max-width: 450px) {
     :root {
-        --height__slider: 250px;
+        --height__slider: 15rem;
     }
 
     .radio2:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-250px);
+        transform: translateY(-15rem);
     }
 
     .radio3:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-500px);
+        transform: translateY(-30rem);
     }
 
     .radio4:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-750px);
+        transform: translateY(-45rem);
     }
 
     .radio5:checked ~ .slider__container .slider__contant__wrap {
-        transform: translateY(-1000px);
+        transform: translateY(-60rem);
     }
 }
 /* media end */
